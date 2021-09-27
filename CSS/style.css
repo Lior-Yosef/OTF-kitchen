@@ -1,0 +1,292 @@
+*{ margin: 0;
+padding: 0;}
+
+
+nav { 
+       
+    width: 100%;
+   }
+
+   ul { 
+       
+    align-items: center;
+    height: 9vh;
+    background-color:	#000000;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: bold 300px;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none ;
+    padding: 0%;
+    transition: 1s;}
+
+    li { 
+        margin-right: 15px;
+        transition: 0.5s;
+        color: whitesmoke;
+
+    }
+
+    li:hover { 
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.26);
+        border-radius: 30px;
+        text-align: center;
+    } 
+
+
+#weclome{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px; 
+    background-image: url(https://wallpaper.dog/large/20366327.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative; 
+    padding: 0%;
+    
+}
+ .FrontText{
+    font-family: 'Raleway', sans-serif;
+    font-size: 80px;
+    color: whitesmoke;
+    filter: drop-shadow(10px -2px 10px black );
+}
+
+#aboutUs{
+    margin: 30px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.headline{
+    width: 100vw;
+    text-align: center;
+    border-bottom: 5px solid grey;
+    border-radius: 10px;
+    margin-left: 38%;
+    width: 25%;
+}
+
+#links { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 30px;
+  }
+
+
+
+.sale img { 
+    width: 230px;
+    margin: 5px;
+    transition: 1.5s; }
+
+ .sale img:hover { 
+     width: 240px; }  
+     
+
+
+
+.contener{
+    display: flex;
+    
+}
+
+.Recommendations {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    font-weight: bold;
+    margin: 10px;
+}
+.Recommendations p{
+    text-align: center;
+}
+.Recommendations h4 {
+    font-size: 20px; 
+    font-weight: bold;
+    margin: 5px;
+
+}
+.Recommendations img{
+    width: 250px;
+    height: 200px;
+    border-radius: 200px;
+}
+
+#stars{
+    display: flex;
+}
+
+#headline{
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    margin: 30px;
+}
+
+#formUser{
+    text-align: center;
+}
+#formUser label{
+    font-family: 'Oswald', sans-serif;
+
+}
+
+#formSingUp{
+background-color: rgba(251, 255, 0, 0.466);
+margin-left: 150px;
+margin-right: 150px;
+}
+#formUser button{
+    margin: 5px;
+    width: 150px;
+    height:30px;
+    font-family: 'Oswald', sans-serif;
+    border-radius: 20px;
+    background-color: rgb(146, 189, 81);
+    transition: 0.5s;
+}
+
+#formUser button:hover{
+    background-color: black;
+    color:white;
+
+}
+
+
+footer{
+    background-color: grey;
+}
+.foot{
+    margin-top: 10px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+.inform{
+    display: flex;
+    flex-direction: column;
+    text-align: center;  
+}
+
+
+.Follow{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.Follow h4{
+    font-size: 30px; 
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+
+}
+.icons i{
+    margin: 10px;
+}
+
+.Follow input{
+    width: 40%;
+    margin-top: 5px;
+    margin-left: 150px;
+}
+
+
+@media only screen and (max-device-width:440px){
+    body {
+        background-image: url("https://i.pinimg.com/564x/2f/78/3d/2f783d3ac46c307338eba62b3e173c5e.jpg"); 
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        padding: 0%;
+    }
+
+    ul{
+        font-size: 15px;
+    }
+    li { 
+        margin-left:5px;
+      } 
+      #weclome{
+          height: 200px;
+      }
+      .FrontText{
+          font-size: 50px;
+      }
+      .headline{
+          width: 70%;
+          margin-left: 17%;
+      }
+      .sale{
+          width: 45%;
+          text-align: center;
+          margin: 3px;
+      }
+      .sale img { 
+        width: 150px;
+        height: 150px;
+    }
+    .contener{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .Recommendations{
+        display: flex;
+    }
+    #formSingUp{
+        width: 400px;
+        height: 300px;
+        margin: 5px;
+    }
+    .inform h2{
+        font-size: 15px;
+    }
+    .Follow h4{
+        font-size: 15px;
+    }
+    .icons i{
+        margin: 5px;
+    }
+    .Follow{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Follow input{
+        margin: 3px;
+        width: 70%;
+    }
+
+      
+}
+
+@media screen and (max-device-width:768px) {
+    .headline{
+        width: 50%;
+        margin-left: 25%;
+    }
+    .sale{
+        width: 40%;
+        text-align: center;
+        margin: 3px;
+    }
+    .sale img { 
+      width: 250px;
+      height: 250px;
+  }
+}

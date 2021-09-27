@@ -1,0 +1,198 @@
+*{ margin: 0;
+    padding: 0;}
+    
+nav {       
+    width: 100%;
+    }
+    
+ul {   
+    align-items: center;
+    height: 9vh;
+    background-color:	#000000;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: bold 300px;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none ;
+    padding: 0%;
+    transition: 1s;}
+    
+li { 
+    margin-right: 15px;
+    transition: 0.5s;
+    color: whitesmoke;
+    }
+    
+li:hover { 
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.26);
+    border-radius: 30px;
+    text-align: center;
+} 
+
+#freeShipping{
+    text-align: center;
+    background-color: grey;
+    font-family: 'Oswald', sans-serif;
+}
+#cart{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+#CartTable{
+    align-items: center;
+    width: 80%;
+}
+
+ #CartTable, th {
+    width: 700px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.CarProduct{
+    align-items: center;
+    
+}
+
+.CarProduct td {
+    text-align: center;
+    margin-right: 50px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.CarProduct img {
+    width: 200px;
+    height: 200px;
+}
+
+#totalAmount{
+   text-align: center;
+   width: 50%;
+   
+   text-align: center;
+   font-family: 'Oswald', sans-serif;
+   background-color: rgba(255, 127, 80, 0.452);
+
+}
+
+
+@media only screen and (max-device-width:440px){
+    body {
+        background-image: url("https://i.pinimg.com/564x/2f/78/3d/2f783d3ac46c307338eba62b3e173c5e.jpg"); 
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        padding: 0%;
+    }
+
+    ul{
+        font-size: 15px;
+    }
+    li { 
+        margin-left:5px;
+      } 
+    
+      .CarProduct img {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .foot .inform h2{
+        font-size: 15px;
+    }
+    .foot .icons i{
+        margin: 5px;
+    }
+    .Follow{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .foot .Follow input{
+        margin: 3px;
+        width: 70%;
+    }
+    .foot .Follow h4{
+        font-size: 15px;
+    }
+      
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: grey;
+}
+.foot{
+    margin-top: 10px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+.inform{
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+    font-family: 'Oswald', sans-serif; 
+}
+
+
+.Follow{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.Follow h4{
+    font-size: 30px; 
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+
+}
+.icons i{
+    margin: 10px;
+}
+
+.Follow input{
+    width: 40%;
+    margin-top: 5px;
+    margin-left: 150px;
+}
+
+    
