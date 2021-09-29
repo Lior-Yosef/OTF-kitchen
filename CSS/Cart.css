@@ -79,6 +79,20 @@ li:hover {
    background-color: rgba(255, 127, 80, 0.452);
 
 }
+.btn {
+    margin: 5px;
+    width: 100px;
+    height:30px;
+    border-radius: 20px;
+    background-color: rgba(255, 127, 80, 0.452);
+    transition: 0.5s;
+}
+
+.btn :hover{
+    background-color: black;
+    color:white;
+
+}
 
 
 @media only screen and (max-device-width:440px){

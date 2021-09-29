@@ -6,6 +6,7 @@ myCart.innerHTML =
 <th> </th>
 <th> Product Name </th>
 <th> Price </th>
+<th> </th>
 </tr>
 
 <tr class="CarProduct"> 
@@ -13,7 +14,7 @@ myCart.innerHTML =
 <td class="ProductImg"><img src= ${Product[2].images[0]}> </td>
 <td class="ProductName">${Product[2].NameProduct} </td>
 <td class="ProductPrice">${Product[2].price}<i class="fas fa-dollar-sign"></i>  </td>
-<td class="ProductQuantity">
+<td class="ProductQuantity"> <button class="btn"> remove </button> </td>
 
 
 </td>
@@ -26,7 +27,8 @@ myCart.innerHTML =
 <td class="ProductImg"><img src= ${Product[15].images[0]}> </td>
 <td class="ProductName">${Product[15].NameProduct} </td>
 <td class="ProductPrice">${Product[15].price} <i class="fas fa-dollar-sign"></i> </td>
-<td class="ProductQuantity">
+<td class="ProductQuantity"> <button class="btn"> remove </button> </td>
+
 
 
 
@@ -40,7 +42,8 @@ myCart.innerHTML =
 <td class="ProductImg"><img src= ${Product[40].images[0]}> </td>
 <td class="ProductName">${Product[40].NameProduct} </td>
 <td class="ProductPrice">${Product[40].price}<i class="fas fa-dollar-sign"></i>  </td>
-<td class="ProductQuantity">
+<td class="ProductQuantity"> <button class="btn"> remove </button> </td>
+
 
 
 </td>
