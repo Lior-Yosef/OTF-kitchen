@@ -1,7 +1,7 @@
 var myCart = document.getElementById("cart");
 
 myCart.innerHTML =
-`<table id="CartTable">
+   `<table id="CartTable">
 <tr>
 <th> </th>
 <th> Product Name </th>
@@ -57,21 +57,28 @@ myCart.innerHTML =
 <h1>TOTAL PRICE:</h1>
 <h2 id="totalAmountNumber"></h2>`
 
-ProductPrice=document.getElementsByClassName("ProductPrice");
-totalAmount=document.getElementById("totalAmount");
-var TotalPrice=0;
+ProductPrice = document.getElementsByClassName("ProductPrice");
+totalAmount = document.getElementById("totalAmount");
+let TotalPrice=0;
 
 function totalPay() {
    for (let i = 0; i < ProductPrice.length; i++) {
-    TotalPrice+=parseInt(ProductPrice[i].innerText)
-       
-   } 
-   return TotalPrice
+      TotalPrice += parseInt(ProductPrice[i].innerText)
+   }
+   totalAmountNumber.innerHTML = `${TotalPrice}<i class="fas fa-dollar-sign"></i>`
 }
 totalPay()
 
-totalAmount.innerHTML+=`<h1>${TotalPrice}<i class="fas fa-dollar-sign"></i> </h1>`
+
+var removeFromCart = document.getElementsByClassName("btn")
+var CarProduct = document.getElementsByClassName("CarProduct")
 
 
-
-
+for (let i = 0; i < removeFromCart.length; i++) {
+   removeFromCart[i].onclick = () => {
+      ProductPrice[i].innerText = 0
+      TotalPrice=0
+      CarProduct[i].style.display = "none";
+      totalPay()
+   }
+}
